@@ -36,7 +36,7 @@ public class AnalyseurSyntaxiqueDoWhile {
                 if (erreurDansStructure) {
                     error = true; // Marquer qu'il y a au moins une erreur
                     nombreErreurs++;
-                    System.out.println("❌ Structure do-while n°" + nombreStructures + " contient des erreurs");
+                    System.out.println(" Structure do-while n°" + nombreStructures + " contient des erreurs");
                 }
                 
                 // Continuer à chercher d'autres structures même après une erreur
@@ -47,13 +47,13 @@ public class AnalyseurSyntaxiqueDoWhile {
         }
         
         if (nombreStructures == 0) {
-            System.out.println("❌ Aucune structure do-while trouvée dans le fichier.");
+            System.out.println(" Aucune structure do-while trouvée dans le fichier.");
             return false;
         }
         
         // Afficher le résumé
         System.out.println("\n══════════════════════════════════════════════════");
-        System.out.println("📊 RÉSULTAT SYNTAXIQUE :");
+        System.out.println(" RÉSULTAT SYNTAXIQUE :");
         System.out.println("══════════════════════════════════════════════════");
         System.out.println("Structures do-while trouvées : " + nombreStructures);
         System.out.println("Structures avec erreurs : " + nombreErreurs);
@@ -185,4 +185,5 @@ public class AnalyseurSyntaxiqueDoWhile {
             tokenCourant = null;
         }
     }
+
 }
